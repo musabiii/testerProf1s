@@ -31,7 +31,11 @@ function App() {
     if (!el) {
       return
     }
-    setOptions(el.options)
+
+    const shuffledArray = el.options.sort(() => 0.5 - Math.random());
+
+
+    setOptions(shuffledArray)
     setTitle(el.title)
     setAnswer(el.answerId)
     setPublicAnswer(0)
