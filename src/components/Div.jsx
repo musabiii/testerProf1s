@@ -4,14 +4,14 @@ import { useEffect, useState } from 'react';
 import { getQuestion } from '../db/db';
 
 
-export default function Div({ currentDiv }) {
+export default function Div({ currentQuestion, setCurrentQuestion, currentDiv }) {
 
     console.log(currentDiv)
 
     const [answer, setAnswer] = useState(1);
     const [publicAnswer, setPublicAnswer] = useState(0);
     const [userAnswer, setUserAnswer] = useState(0);
-    const [current, setCurrent] = useState(1);
+    // const [current, setCurrent] = useState(1);
     const [title, setTitle] = useState(1);
 
     const op = [
@@ -24,9 +24,9 @@ export default function Div({ currentDiv }) {
     const [options, setOptions] = useState(op);
 
     useEffect(() => {
-        console.log(current);
+        console.log(currentQuestion);
         console.log("currentDiv", currentDiv)
-        const el = getQuestion(current, currentDiv);
+        const el = getQuestion(currentQuestion, currentDiv);
 
         if (!el) {
             return
@@ -42,17 +42,17 @@ export default function Div({ currentDiv }) {
         setUserAnswer(0)
 
         console.log(el);
-    }, [current, currentDiv])
+    }, [currentQuestion, currentDiv])
 
     const handleForward = () => {
         console.log("Forward")
-        setCurrent(current + 1)
+        setCurrentQuestion(currentQuestion + 1)
     }
 
     const handleBack = () => {
         console.log("Back");
-        if (current > 0) {
-            setCurrent(current - 1)
+        if (currentQuestion > 0) {
+            setCurrentQuestion(currentQuestion - 1)
         }
     }
 
@@ -73,22 +73,22 @@ export default function Div({ currentDiv }) {
     return (
         <>
             <main>
-                    {/* <Col><Button onClick={() => setCurrent(1)}>Начало</Button></Col> */}
-                    {/* <Col><h5>{current}</h5></Col> */}
-                    <Col><h5>{title}</h5></Col>
+                {/* <Col><Button onClick={() => setCurrent(1)}>Начало</Button></Col> */}
+                {/* <Col><h5>{current}</h5></Col> */}
+                <Col><h5>{title}</h5></Col>
 
-                    <div className="list">
-                        {
-                            options.map((el) => {
-                                return <Col key={el.id}><Button variant={el.id == publicAnswer ? "success" : el.id == userAnswer ? "danger" : "outline-dark"} onClick={() => handleClick(el.id)}>{el.title}</Button></Col>
-                            })
-                        }
-                    </div>
+                <div className="list">
+                    {
+                        options.map((el) => {
+                            return <Col key={el.id}><Button variant={el.id == publicAnswer ? "success" : el.id == userAnswer ? "danger" : "outline-dark"} onClick={() => handleClick(el.id)}>{el.title}</Button></Col>
+                        })
+                    }
+                </div>
 
 
-                    <div className='move-btn'>
-                            <Button onClick={handleBack}>Назад</Button><Button onClick={handleForward}>Вперед</Button>
-                    </div>
+                <div className='move-btn'>
+                    <Button onClick={handleBack}>Назад</Button><Button onClick={handleForward}>Вперед</Button>
+                </div>
 
             </main>
 
