@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0px;
 }
 
 .logo {
@@ -39,4 +42,30 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.container-md {
+}
+
+.list {
+  padding: 20px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.move-btn {
+  display: flex;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  justify-content: center;
+  gap: 10px;
+}
+
+main {
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.list-div {
+  margin-bottom: 30vh;
 }

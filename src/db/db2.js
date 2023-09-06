@@ -1,4 +1,4 @@
-let db = [
+let db2 = [
   {
     id: 1,
     title: "В решении предусмотрена возможность ведения следующих видов учета:",
@@ -26,7 +26,7 @@ let db = [
   },
 ];
 
-db =
+db2 =
 [
     {
       title:
@@ -1821,9 +1821,9 @@ db =
   ];
 
 
-function getQuestion(id) {
-  const el = db.find((el) => el.id == id);
-  return el;
-}
+// function getQuestion(id) {
+//   const el = db.find((el) => el.id == id);
+//   return el;
+// }
 
-export { getQuestion };
+export { db2 };
