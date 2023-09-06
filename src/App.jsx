@@ -74,6 +74,7 @@ function App() {
     <>
       <main>
         <Container fluid>
+          <Col><Button onClick={() => setCurrent(1)}>Начало</Button></Col>
           <Col><h5>{current}</h5></Col>
           <Col><h5>{title}</h5></Col>
 
