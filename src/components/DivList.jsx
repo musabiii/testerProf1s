@@ -15,7 +15,7 @@ export default function DivList({ currentDiv, handlePressDiv }) {
     return (
         <div className='div-list'>
 
-            {list.map((el, ind) => <Button onClick={()=>handlePressDiv(ind+1)} variant='outline-dark' key={ind}>{el}</Button>)}
+            {list.map((el, ind) => <p key={ind}><Button onClick={()=>handlePressDiv(ind+1)} variant='outline-dark'>{el}</Button></p>)}
 
         </div>
     )
