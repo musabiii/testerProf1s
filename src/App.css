@@ -6,6 +6,8 @@
   margin-top: auto;
   position: sticky;
   bottom: 0px;
+  height: 90vh;
+  display: flex;
 }
 
 .logo {
@@ -44,12 +46,9 @@
   color: #888;
 }
 
-.container-md {
-}
-
 .list {
   padding: 20px;
-  height: 50vh;
+  height: 60vh;
   overflow-y: scroll;
 }
 
@@ -64,8 +63,9 @@
 main {
   margin-top: auto;
   margin-bottom: 0px;
+  height: 100%;
 }
 
 .list-div {
-  margin-bottom: 30vh;
+  margin-bottom: 40vh;
 }
