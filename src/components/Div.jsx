@@ -1,7 +1,7 @@
 import { Col, Container, Stack } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { useEffect, useState } from 'react';
-import { getQuestion } from '../db/db';
+import { getCount, getQuestion } from '../db/db';
 
 
 export default function Div({ currentQuestion, setCurrentQuestion, currentDiv }) {
@@ -70,6 +70,16 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
 
         }
     }
+
+    const handleShuffle = () => {
+
+        const len = getCount(currentDiv)
+        console.log(len)
+        const newId = Math.floor(Math.random() * (len - 0 + 1));
+        console.log("newId",newId)
+        setCurrentQuestion(newId)
+
+    }
     return (
         <>
             <main>
@@ -87,7 +97,7 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
 
 
                 <div className='move-btn'>
-                    <Button onClick={handleBack}>Назад</Button><Button onClick={handleForward}>Вперед</Button>
+                    <Button onClick={handleBack}>Назад</Button><Button onClick={handleShuffle}>Случайно</Button><Button onClick={handleForward}>Вперед</Button>
                 </div>
 
             </main>

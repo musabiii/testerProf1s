@@ -15,4 +15,9 @@ function getList(dbNum) {
   return db["db" + dbNum].map((el) => el.title);
 }
 
-export { getQuestion, getList };
+function getCount(dbNum) {
+  return  db["db" + dbNum].length
+
+}
+
+export { getQuestion, getList,getCount };
