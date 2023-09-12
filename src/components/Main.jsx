@@ -14,21 +14,18 @@ export default function Main() {
 
 
 
-    useEffect(() => {
-        const q = getQuestions(currentDiv)
-        setQuestions(q)
-        console.log(questions)
-
-    }, [currentDiv])
-
-
     const list = [
         "01 Подготовительный этап",
-        "02 Настройка правил продаж"
+        "02 Настройка правил продаж",
+        "03 Управление отношениями с клиентами. Самообслуживание клиентов. Работа с торговыми представителями"
     ]
 
     const handleDiv = (id) => {
         setCurrendDiv(id)
+
+        const q = getQuestions(id)
+        setQuestions(q)
+
         setPage("Div")
     }
 
@@ -43,9 +40,7 @@ export default function Main() {
     }
 
     const shuffleQuestions = () => {
-        console.log(questions)
        const newQestions =  shuffle(questions);
-       console.log(newQestions)
        setQuestions(newQestions)
     }
 
@@ -55,11 +50,15 @@ export default function Main() {
 
             {page !== "Main" ||
             <div className="list-div"> {list.map((el, ind) =>
-            <p key={ind}> <Button onClick={() => handleDiv(ind + 1)}>{el} </Button>
-            <Button onClick={() => handleDivList(ind + 1)} >Список</Button>
-            <Button onClick={shuffleQuestions} >Mix</Button>
+            <p className="list-div-el" key={ind}> <Button onClick={() => handleDiv(ind + 1)}>{el} </Button>
+            <Button variant="outline-dark" onClick={() => handleDivList(ind + 1)} >Список</Button>
+            {/* <Button variant="outline-dark" onClick={shuffleQuestions} >Mix</Button> */}
             </p>)}
+            <Button variant="outline-dark" onClick={shuffleQuestions} >Mix</Button>
+
             </div>}
+
+
 
 
             {page !== "Div" || <div><Div currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} questions = {questions} currentDiv={currentDiv} /></div>}

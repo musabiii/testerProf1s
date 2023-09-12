@@ -1,9 +1,11 @@
-import { db1 } from "./db1";
-import { db2 } from "./db2";
+import db1 from "./db1.json";
+import db2 from "./db2.json";
+import db3 from "./db3.json";
 
 const db = {
   db1: db1,
   db2: db2,
+  db3: db3,
 };
 
 function getQuestion(id, dbNum) {
