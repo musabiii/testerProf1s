@@ -4,24 +4,18 @@ import { useEffect, useState } from 'react';
 import { getCount, getQuestion } from '../db/db';
 
 
-export default function Div({ currentQuestion, setCurrentQuestion, currentDiv }) {
+export default function Div({ currentQuestion, setCurrentQuestion,questions, currentDiv }) {
 
     console.log(currentDiv)
+
+    const currentElement = questions[currentQuestion-1]
 
     const [answer, setAnswer] = useState(1);
     const [publicAnswer, setPublicAnswer] = useState(0);
     const [userAnswer, setUserAnswer] = useState(0);
     // const [current, setCurrent] = useState(1);
-    const [title, setTitle] = useState(1);
-
-    const op = [
-        { id: 1, title: "1. Управленческий" },
-        { id: 2, title: "2. Бухгалтерский и налоговый, финансовый учет (МСФО)" },
-        { id: 3, title: "3. Оперативный" },
-    ];
 
 
-    const [options, setOptions] = useState(op);
 
     useEffect(() => {
         console.log(currentQuestion);
@@ -32,12 +26,12 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
             return
         }
 
-        const shuffledArray = el.options.sort(() => 0.5 - Math.random());
+        // const shuffledArray = el.options.sort(() => 0.5 - Math.random());
 
 
-        setOptions(shuffledArray)
-        setTitle(el.title)
-        setAnswer(el.answerId)
+        // setOptions(shuffledArray)
+        // setTitle(el.title)
+        setAnswer(currentElement["answerId"])
         setPublicAnswer(0)
         setUserAnswer(0)
 
@@ -45,7 +39,6 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
     }, [currentQuestion, currentDiv])
 
     const handleForward = () => {
-        console.log("Forward")
         setCurrentQuestion(currentQuestion + 1)
     }
 
@@ -59,8 +52,6 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
     const handleClick = (id) => {
         setPublicAnswer(answer)
         setUserAnswer(id)
-
-
 
         if (id == answer) {
             console.log("correct")
@@ -85,11 +76,12 @@ export default function Div({ currentQuestion, setCurrentQuestion, currentDiv })
             <main>
                 {/* <Col><Button onClick={() => setCurrent(1)}>Начало</Button></Col> */}
                 {/* <Col><h5>{current}</h5></Col> */}
-                <Col><h5>{title}</h5></Col>
+                <Col><h5>{currentElement["title"]}</h5></Col>
 
                 <div className="list">
                     {
-                        options.map((el) => {
+                        // options.map((el) => {
+                            currentElement["options"].map((el) => {
                             return <Col key={el.id}><Button variant={el.id == publicAnswer ? "success" : el.id == userAnswer ? "danger" : "outline-dark"} onClick={() => handleClick(el.id)}>{el.title}</Button></Col>
                         })
                     }

@@ -23,7 +23,7 @@ let db2 =
       { id: 6, title: "6.\tВозможно применение вариантов 1, 2 и 3" },
     ],
     id: 1,
-    answerId: 4,
+    answerId: 6,
     div: "",
   },
   {
@@ -46,7 +46,7 @@ let db2 =
       },
     ],
     id: 2,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -69,7 +69,7 @@ let db2 =
       },
     ],
     id: 3,
-    answerId: 3,
+    answerId: 4,
     div: "",
   },
   {
@@ -98,7 +98,7 @@ let db2 =
       },
     ],
     id: 4,
-    answerId: 5,
+    answerId: 2,
     div: "",
   },
   {
@@ -121,7 +121,7 @@ let db2 =
       },
     ],
     id: 5,
-    answerId: 1,
+    answerId: 2,
     div: "",
   },
   {
@@ -136,7 +136,7 @@ let db2 =
       },
     ],
     id: 6,
-    answerId: 3,
+    answerId: 2,
     div: "",
   },
   {
@@ -149,7 +149,7 @@ let db2 =
       { id: 4, title: '4.\tв справочнике "Ценовые группы"' },
     ],
     id: 7,
-    answerId: 3,
+    answerId: 2,
     div: "",
   },
   {
@@ -164,7 +164,7 @@ let db2 =
       { id: 6, title: "6.\tДоступны все перечисленные способы" },
     ],
     id: 8,
-    answerId: 3,
+    answerId: 6,
     div: "",
   },
   {
@@ -188,7 +188,7 @@ let db2 =
       },
     ],
     id: 9,
-    answerId: 4,
+    answerId: 2,
     div: "",
   },
   {
@@ -216,7 +216,7 @@ let db2 =
       },
     ],
     id: 10,
-    answerId: 2,
+    answerId: 1,
     div: "",
   },
   {
@@ -233,7 +233,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 11,
-    answerId: 2,
+    answerId: 4,
     div: "",
   },
   {
@@ -246,7 +246,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 12,
-    answerId: 2,
+    answerId: 5,
     div: "",
   },
   {
@@ -288,7 +288,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 14,
-    answerId: 2,
+    answerId: 5,
     div: "",
   },
   {
@@ -305,7 +305,7 @@ let db2 =
       { id: 6, title: "6.\tВерны утверждения 1 и 3" },
     ],
     id: 15,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -325,7 +325,7 @@ let db2 =
       },
     ],
     id: 16,
-    answerId: 1,
+    answerId: 3,
     div: "",
   },
   {
@@ -337,7 +337,7 @@ let db2 =
       { id: 3, title: '3.\tВ документе "Установка цен номенклатуры"' },
     ],
     id: 17,
-    answerId: 5,
+    answerId: 1,
     div: "",
   },
   {
@@ -366,7 +366,7 @@ let db2 =
       },
     ],
     id: 18,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -384,7 +384,7 @@ let db2 =
       { id: 6, title: "6.\tВозможны все варианты" },
     ],
     id: 19,
-    answerId: 2,
+    answerId: 5,
     div: "",
   },
   {
@@ -407,7 +407,7 @@ let db2 =
       },
     ],
     id: 20,
-    answerId: 1,
+    answerId: 3,
     div: "",
   },
   {
@@ -427,7 +427,7 @@ let db2 =
       { id: 3, title: '3.\tФормируется отчет "Прайс-лист"' },
     ],
     id: 21,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -527,7 +527,7 @@ let db2 =
       },
     ],
     id: 25,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -547,7 +547,7 @@ let db2 =
       { id: 6, title: "6.\tСправедливы все утверждения" },
     ],
     id: 26,
-    answerId: 1,
+    answerId: 6,
     div: "",
   },
   {
@@ -575,7 +575,7 @@ let db2 =
       },
     ],
     id: 27,
-    answerId: 1,
+    answerId: 2,
     div: "",
   },
   {
@@ -640,7 +640,7 @@ let db2 =
       { id: 4, title: "4.\tВ валюте управленческого учета" },
     ],
     id: 30,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -659,7 +659,7 @@ let db2 =
       { id: 6, title: "6.\tВерны утверждения 2 и 4." },
     ],
     id: 31,
-    answerId: 5,
+    answerId: 2,
     div: "",
   },
   {
@@ -678,7 +678,7 @@ let db2 =
       { id: 4, title: "4.\tТакого бизнес-процесса в программе давно уже нет" },
     ],
     id: 32,
-    answerId: 1,
+    answerId: 3,
     div: "",
   },
   {
@@ -702,7 +702,7 @@ let db2 =
       },
     ],
     id: 33,
-    answerId: 5,
+    answerId: 2,
     div: "",
   },
   {
@@ -729,7 +729,7 @@ let db2 =
       },
     ],
     id: 34,
-    answerId: 2,
+    answerId: 3,
     div: "",
   },
   {
@@ -755,7 +755,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все варианты" },
     ],
     id: 35,
-    answerId: 4,
+    answerId: 5,
     div: "",
   },
   {
@@ -819,7 +819,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все варианты" },
     ],
     id: 38,
-    answerId: 1,
+    answerId: 5,
     div: "",
   },
   {
@@ -861,7 +861,7 @@ let db2 =
       },
     ],
     id: 40,
-    answerId: 3,
+    answerId: 2,
     div: "",
   },
   {
@@ -927,7 +927,7 @@ let db2 =
       },
     ],
     id: 42,
-    answerId: 1,
+    answerId: 6,
     div: "",
   },
   {
@@ -952,7 +952,7 @@ let db2 =
       { id: 4, title: "4.\tвозможен любой вариант" },
     ],
     id: 43,
-    answerId: 2,
+    answerId: 1,
     div: "",
   },
   {
@@ -968,7 +968,7 @@ let db2 =
       { id: 4, title: "4.\tможно уточнить по каждому сегменту номенклатуры" },
     ],
     id: 44,
-    answerId: 4,
+    answerId: 2,
     div: "",
   },
   {
@@ -982,7 +982,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все варианты" },
     ],
     id: 45,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -996,7 +996,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все варианты" },
     ],
     id: 46,
-    answerId: 5,
+    answerId: 4,
     div: "",
   },
   {
@@ -1022,7 +1022,7 @@ let db2 =
       { id: 4, title: "4.\tВытеснение" },
     ],
     id: 48,
-    answerId: 1,
+    answerId: 3,
     div: "",
   },
   {
@@ -1040,7 +1040,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 49,
-    answerId: 4,
+    answerId: 5,
     div: "",
   },
   {
@@ -1087,7 +1087,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все варианты" },
     ],
     id: 51,
-    answerId: 3,
+    answerId: 4,
     div: "",
   },
   {
@@ -1100,7 +1100,7 @@ let db2 =
       { id: 5, title: "5.\tВерны утверждения 2 и 3" },
     ],
     id: 52,
-    answerId: 1,
+    answerId: 5,
     div: "",
   },
   {
@@ -1124,7 +1124,7 @@ let db2 =
       },
     ],
     id: 53,
-    answerId: 3,
+    answerId: 2,
     div: "",
   },
   {
@@ -1141,7 +1141,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 54,
-    answerId: 1,
+    answerId: 6,
     div: "",
   },
   {
@@ -1163,7 +1163,7 @@ let db2 =
       },
     ],
     id: 55,
-    answerId: 4,
+    answerId: 3,
     div: "",
   },
   {
@@ -1182,7 +1182,7 @@ let db2 =
       { id: 4, title: "4.\tВерны утверждения 2 и 3" },
     ],
     id: 56,
-    answerId: 5,
+    answerId: 4,
     div: "",
   },
   {
@@ -1204,7 +1204,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 57,
-    answerId: 1,
+    answerId: 5,
     div: "",
   },
   {
@@ -1233,7 +1233,7 @@ let db2 =
       },
     ],
     id: 58,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -1265,7 +1265,7 @@ let db2 =
       },
     ],
     id: 59,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -1278,7 +1278,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 60,
-    answerId: 2,
+    answerId: 4,
     div: "",
   },
   {
@@ -1293,7 +1293,7 @@ let db2 =
       { id: 6, title: "6.\tВерны утверждения 1 и 4" },
     ],
     id: 61,
-    answerId: 1,
+    answerId: 5,
     div: "",
   },
   {
@@ -1318,7 +1318,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 62,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -1331,7 +1331,7 @@ let db2 =
       { id: 5, title: "5.\tВерны все утверждения" },
     ],
     id: 63,
-    answerId: 3,
+    answerId: 1,
     div: "",
   },
   {
@@ -1345,7 +1345,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 64,
-    answerId: 3,
+    answerId: 5,
     div: "",
   },
   {
@@ -1390,7 +1390,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 67,
-    answerId: 5,
+    answerId: 6,
     div: "",
   },
   {
@@ -1418,7 +1418,7 @@ let db2 =
       { id: 6, title: "6.\tВерны все утверждения" },
     ],
     id: 68,
-    answerId: 5,
+    answerId: 6,
     div: "",
   },
   {
@@ -1445,7 +1445,7 @@ let db2 =
       { id: 6, title: "6.\tВерны утверждения 1, 2 и " },
     ],
     id: 69,
-    answerId: 3,
+    answerId: 6,
     div: "",
   },
 ];

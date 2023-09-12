@@ -11,6 +11,10 @@ function getQuestion(id, dbNum) {
   return el;
 }
 
+function getQuestions(dbNum) {
+  return db["db" + dbNum]
+}
+
 function getList(dbNum) {
   return db["db" + dbNum].map((el) => el.title);
 }
@@ -20,4 +24,4 @@ function getCount(dbNum) {
 
 }
 
-export { getQuestion, getList,getCount };
+export { getQuestion, getList,getCount,getQuestions };
