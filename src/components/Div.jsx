@@ -18,13 +18,7 @@ export default function Div({ currentQuestion, setCurrentQuestion,questions, cur
 
 
     useEffect(() => {
-        console.log(currentQuestion);
-        console.log("currentDiv", currentDiv)
-        const el = getQuestion(currentQuestion, currentDiv);
 
-        if (!el) {
-            return
-        }
 
         // const shuffledArray = el.options.sort(() => 0.5 - Math.random());
 
@@ -35,7 +29,6 @@ export default function Div({ currentQuestion, setCurrentQuestion,questions, cur
         setPublicAnswer(0)
         setUserAnswer(0)
 
-        console.log(el);
     }, [currentQuestion, currentDiv])
 
     const handleForward = () => {

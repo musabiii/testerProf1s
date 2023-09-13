@@ -78,7 +78,8 @@ main {
 }
 
 .list-div {
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
+  overflow-y: scroll;
 }
 
 .div-list {

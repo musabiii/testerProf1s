@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Div from "./Div";
 import { Button } from "react-bootstrap";
 import DivList from "./DivList";
-import { getQuestion, getQuestions } from "../db/db";
+import { getExamQuestions, getQuestion, getQuestions } from "../db/db";
 
 export default function Main() {
 
@@ -17,7 +17,18 @@ export default function Main() {
     const list = [
         "01 Подготовительный этап",
         "02 Настройка правил продаж",
-        "03 Управление отношениями с клиентами. Самообслуживание клиентов. Работа с торговыми представителями"
+        "03 Управление отношениями с клиентами",
+        "04 Оптовая торговля",
+        "05 Розничная торговля",
+        "06 Работа с поставщиками",
+        "07 Управление складом",
+        "08 Планирование обеспечения",
+        "09 Денежные средства",
+        "10 Взаиморасчеты",
+        "11 Регламентрированный учет",
+        "12 Финансовый результат",
+        "13 Администрирование",
+        "14 Дополнительные сервисы"
     ]
 
     const handleDiv = (id) => {
@@ -44,6 +55,12 @@ export default function Main() {
        setQuestions(newQestions)
     }
 
+    const handleExam = () => {
+        const examQuestions = getExamQuestions()
+        setQuestions(examQuestions)
+        setPage("Div")
+    }
+
     return (
         <div className="main">
             {page == "Main" || <div> <Button onClick={() => setPage("Main")}>Список тем</Button></div>}
@@ -54,7 +71,10 @@ export default function Main() {
             <Button variant="outline-dark" onClick={() => handleDivList(ind + 1)} >Список</Button>
             {/* <Button variant="outline-dark" onClick={shuffleQuestions} >Mix</Button> */}
             </p>)}
+
+
             <Button variant="outline-dark" onClick={shuffleQuestions} >Mix</Button>
+            <Button variant="outline-dark" onClick={handleExam} >Экзамен</Button>
 
             </div>}
 
