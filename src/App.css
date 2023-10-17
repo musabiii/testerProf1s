@@ -95,6 +95,11 @@ main {
   padding:0 30px;
 }
 
-.list .btn {
+.btn {
   width: 100%;
 }
+
+.btn.list-div-el-list {
+  width: 30%;
+}
+

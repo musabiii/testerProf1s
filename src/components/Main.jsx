@@ -34,14 +34,15 @@ export default function Main() {
     const handleDiv = (id) => {
         setCurrendDiv(id)
 
-        const q = getQuestions(id)
-        setQuestions(q)
+
 
         setPage("Div")
     }
 
     const handleDivList = (id) => {
         setCurrendDiv(id)
+        const q = getQuestions(id)
+        setQuestions(q)
         setPage("DivList")
     }
 
@@ -68,7 +69,7 @@ export default function Main() {
             {page !== "Main" ||
             <div className="list-div"> {list.map((el, ind) =>
             <p className="list-div-el" key={ind}> <Button onClick={() => handleDiv(ind + 1)}>{el} </Button>
-            <Button variant="outline-dark" onClick={() => handleDivList(ind + 1)} >Список</Button>
+            <Button className="list-div-el-list" variant="outline-dark" onClick={() => handleDivList(ind + 1)} >Список</Button>
             {/* <Button variant="outline-dark" onClick={shuffleQuestions} >Mix</Button> */}
             </p>)}
 
